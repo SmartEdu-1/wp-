@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | Sample Webpage</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Login</h1>
+      <p class="tagline">Sign in to continue to the sample site.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card login-card">
+      <form id="loginForm" novalidate>
+        <div class="form-field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required />
+          <p class="field-error" id="emailError" aria-live="polite"></p>
+        </div>
+
+        <div class="form-field">
+          <label for="password">Password</label>
+          <input id="password" name="password" type="password" placeholder="At least 8 characters" required minlength="8" />
+          <p class="field-error" id="passwordError" aria-live="polite"></p>
+        </div>
+
+        <button type="submit" class="btn-primary" id="loginBtn">Sign in</button>
+
+        <p class="login-message" id="loginMessage" aria-live="polite"></p>
+      </form>
+
+      <p class="small">
+        Don't have an account? <a href="index.html">Go back to the sample page</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Sample Webpage. Built with HTML, CSS, and JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="login.js"></script>
+</body>
+</html>

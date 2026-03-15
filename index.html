@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sample Webpage</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Welcome to the Sample Webpage</h1>
+      <p class="tagline">A simple starter page with HTML, CSS, and JavaScript.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>About this page</h2>
+      <p>This is a sample HTML page created for demonstration purposes. It includes responsive layout, basic styling, and a small interactive widget.</p>
+    </section>
+
+    <section class="card">
+      <h2>Interactive counter</h2>
+      <p>Click the button to increment the counter:</p>
+      <div class="counter">
+        <button id="decrement" aria-label="Decrement">–</button>
+        <span id="count" class="count">0</span>
+        <button id="increment" aria-label="Increment">+</button>
+      </div>
+      <p id="message" class="message"></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Sample Webpage. Built with HTML, CSS, and JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
